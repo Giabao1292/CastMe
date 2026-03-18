@@ -1,0 +1,131 @@
+.castme-footer-wrap {
+  padding: 0 24px 16px;
+}
+
+.castme-footer {
+  border-radius: 8px;
+  background: #141517;
+  color: #f5f7fa;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+.castme-footer-inner {
+  padding: 40px 38px 22px;
+}
+
+.castme-footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.castme-footer-column {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.castme-footer-column a {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.castme-footer-column a:hover {
+  color: #b8c4d8;
+}
+
+.castme-privacy-badge {
+  width: 20px;
+  height: 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2b76ff;
+  color: #ffffff;
+}
+
+.castme-footer-social-row {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.castme-footer-social-group,
+.castme-footer-mobile-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.castme-footer-social-group > span,
+.castme-footer-mobile-group > span {
+  color: #9aa0a8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.castme-footer-social-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.castme-footer-social-icons a,
+.castme-footer-mobile-group a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.castme-footer-social-icons a:hover,
+.castme-footer-mobile-group a:hover {
+  color: #b8c4d8;
+}
+
+.castme-footer-legal {
+  margin-top: 20px;
+  border-top: 1px solid #2a2e35;
+  padding-top: 16px;
+  text-align: center;
+  color: #9aa0a8;
+  font-size: 13px;
+}
+
+@media (max-width: 991px) {
+  .castme-footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .castme-footer-social-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .castme-footer-wrap {
+    padding: 0 12px 12px;
+  }
+
+  .castme-footer-inner {
+    padding: 24px 20px 18px;
+  }
+
+  .castme-footer-columns {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
