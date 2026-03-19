@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 const navItems = [
   { label: "Dashboard", path: "/dashboard" },
-  { label: "Campaigns", path: "/campaigns" },
+  { label: "Projects", path: "/campaigns" },
   { label: "Find Talents", path: "/find-talents" },
   { label: "Messages", path: "/messages" },
   { label: "Analytics", path: "/analytics" },
@@ -38,10 +38,10 @@ export function BusinessHeader() {
         <div className="business-topbar-actions">
           <label
             className="business-search-box"
-            aria-label="Search campaigns and KOLs"
+            aria-label="Search projects and creators"
           >
             <Search size={14} />
-            <input placeholder="Search" />
+            <input placeholder="Search projects..." />
           </label>
           <button
             type="button"

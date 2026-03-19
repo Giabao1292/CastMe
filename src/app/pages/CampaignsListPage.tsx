@@ -33,15 +33,15 @@ export function CampaignsListPage() {
       <Container className="business-content">
         <header className="business-page-head">
           <div>
-            <p>Campaigns</p>
-            <h1>Manage all campaigns</h1>
+            <p>Projects</p>
+            <h1>Manage collaboration projects</h1>
           </div>
           <Link to="/campaigns/new" className="business-head-cta">
-            + Create Campaign
+            + Create Project
           </Link>
         </header>
 
-        <section className="filter-tabs" aria-label="Campaign status filters">
+        <section className="filter-tabs" aria-label="Project status filters">
           {filters.map((filter) => (
             <button
               key={filter}
@@ -54,7 +54,7 @@ export function CampaignsListPage() {
           ))}
         </section>
 
-        <section className="campaign-card-grid" aria-label="Campaign list">
+        <section className="campaign-card-grid" aria-label="Project list">
           {filteredCampaigns.map((campaign) => (
             <article key={campaign.id} className="campaign-card">
               <div className="campaign-card-top">
